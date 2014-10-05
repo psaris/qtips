@@ -1,0 +1,6 @@
+id,sym,price,tick size,quote size,volatility,rate,description
+0,abc,110,.05,30,.35,.01,security 0
+1,def,80,.05,50,.25,.01,security 1
+2,ghi,10,.01,100,.12,.01,security 2
+3,jkl,5,.01,300,.09,.01,security 3
+4,mno,2,.005,1000,.50,.01,security 4
