@@ -4,7 +4,7 @@
 use:{system["d"] upsert $[99h=type v:get x;v;(-1#` vs x)!1#v]}
 
 / return weekdays from list of dates
-wday:{x where not (x mod 7) in 0 1}
+wday:{x where 1<x mod 7}
 
 / return a range of numbers between (s)tart and (e)nd 
 / with specified (w)indow size
