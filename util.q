@@ -8,7 +8,7 @@ wday:{x where 1<x mod 7}
 
 / return a range of numbers between (s)tart and (e)nd 
 / with specified (w)indow size
-rng:{[w;s;e]s+w*til"j"$(e-s)%w}
+rng:{[w;s;e]s+w*til ceiling(e-s)%w}
 
 / round y to nearest x
 rnd:{x*"j"$y%x}
