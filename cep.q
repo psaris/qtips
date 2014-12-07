@@ -24,6 +24,6 @@ main:{[p;tm]
  }
 
 p:.opt.getopt[c;`ref`db] .z.x
-if[`help in key p;-1 .opt.usage[c;.z.f];exit -1];
+if[`help in key p;-1 .opt.usage[c;.z.f];exit 1];
 .log.lvl:p `log;
 main[p;.z.P]
