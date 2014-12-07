@@ -45,6 +45,8 @@ updt:{[id;tm]
 dump:{[db;tm]
  dt:"d"$tm;
  .log.inf "dumping tables in ", 1_ string ` sv db,`$string dt;
- .Q.dpft[db;dt;`id] each `prices`quotes`trades;
+ 0!/:`price`quote`trade;
+ .Q.dpft[db;dt;`id] each`price`quote`trade`prices`quotes`trades;
+ 1!/:`price`quote`trade;
  }
  
