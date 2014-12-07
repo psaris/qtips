@@ -20,7 +20,7 @@ randrng:{[n;s;e]s+n?e-s}
 sattr:{[t]
  c:first cols t;
  a:`g`u 1=n:count keys t;
- t:$[n;n!@[;c;a#]0!t;@[;c;a#]t];
+ t:n!@[;c;a#]0!t;
  t}
 
 / rename columns of (t)able based on (d)ictionary
