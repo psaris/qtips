@@ -4,17 +4,17 @@
 pctile:{[p;x]x iasc[x]"j"$-.5+p*count x}
 
 / 12 uniforms
-u12:{-6+sum x cut (12*x)?1f}
+u12:{-6f+sum x cut (12f*x)?1f}
 
 skew:{avg[x*x2]%sqrt m2*m2*m2:avg x2:x*x-:avg x}
-kurt:{-3+avg[x2*x2]%x*x:avg x2:x*x-:avg x}
+kurt:{-3f+avg[x2*x2]%x*x:avg x2:x*x-:avg x}
 
 / box-muller
 bm:{
  if[count[x] mod 2;'`length];
  x:2 0N#x;
- r:sqrt -2*log x 0;
- theta:2*acos[-1]*x 1;
+ r:sqrt -2f*log x 0;
+ theta:2f*acos[-1f]*x 1;
  x: r*cos theta;
  x,:r*sin theta;
  x}
@@ -36,7 +36,7 @@ horner:{{z+y*x}[y]/[x]}
 
 / exponentially weighted average
 / x:decay rate, y:data
-ewma:{first[y](1-x)\x*y}
+ewma:{first[y](1f-x)\x*y}
 
 / central region - normal inverse
 cnorminv:{
@@ -63,10 +63,10 @@ norminv:{
  x}
 
 / open high low close
-ohlc:{(first x;max x;min x;last x)}
+ohlc:{(first;max;min;last)@\:x}
 
 / count, min, max, median, standard deviation of x
-summary:{(count x;min x;max x;med x;dev x)}
+summary:{(count;min;max;med;dev)@\:x}
 
 / error function
 erf:{
@@ -74,7 +74,7 @@ erf:{
    -0.284496736  0.254829592;
  t:1f%1f+0.3275911*abs x;
  t:1f-t*horner[a;t]*exp neg x*x;
- x:t*1 -1 x<0f;
+ x:t*1 -1f x<0f;
  x}
 
 / cumulative normal 
@@ -86,4 +86,4 @@ nr:{[e;f;x]$[e>abs d:first[r]%last r:f x;x;x-d]}
 
 / function inversion
 / (r)oot-finding (f)unction, (f)unction
-invert:{[rf;f;y;x]rf[(neg y;0)+f@]x}
+invert:{[rf;f;y;x]rf[(neg y;0f)+f@]x}
