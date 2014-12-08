@@ -4,6 +4,7 @@ c:.opt.config
 c,:(`ref;`:ref.csv;"file with reference data")
 c,:(`eod;0D23:59;"time for end of day event")
 c,:(`db;`:db;"end of day dump location")
+c,:(`debug;0b;"don't start engine")
 c,:(`log;2;"log level")
 
 / utility function to generate until timer events
@@ -24,6 +25,6 @@ main:{[p;tm]
  }
 
 p:.opt.getopt[c;`ref`db] .z.x
-if[`help in key p;-1 .opt.usage[c;.z.f];exit 1];
-.log.lvl:p `log;
-main[p;.z.P]
+if[`help in key p;-1 .opt.usage[c;.z.f];exit 1]
+.log.lvl:p `log
+if[not p`debug;main[p;.z.P]]
