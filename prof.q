@@ -37,7 +37,8 @@ instrall:{instr each lambdas raze .util.tree each `.,dirs`}
 
 / generate profile statistics report given an (e)vents table
 stats:{[e]
- e:e pj select neg sum time,nc:count i by id:pid from e;
+ c:select sum time,nc:count i by id:pid from e;
+ e:e pj update neg time from c;
  s:select sum time*1e-6,n:count i,avg nc by func from e;
  s:update timepc:time%n from s;
  s:`pct xdesc update pct:100*time%sum time from s;
