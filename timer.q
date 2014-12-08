@@ -4,8 +4,8 @@ timer,:(`;();0Wp)
 
 \d .timer
 
-/ merge new timer (r)ecord into (t)able
-merge:{[t;r]`time xdesc t upsert r}
+/ merge record(y) into table(x) in reverse chronological order
+merge:`time xdesc upsert
 
 / add new timer (f)unction with (n)ame and (t)i(m)e into (t)able
 add:{[t;n;f;tm]
