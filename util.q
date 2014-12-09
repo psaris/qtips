@@ -30,26 +30,27 @@ mapcol:{[d;t](c^d c:cols t) xcol t}
 kasc:{$[`s=attr k:key x;x;(`s#k i)!value[x]i:iasc k]}
 
 / string implementaion of pivot
-/ (t)able, pivot (c)olumns, (g)roup column, (d)ata column
-pivots:{[t;c;g;d]
- s:"exec (`$string asc distinct t ", (-3!c),")";
- s,:"#(`$string ",string[c],")!",string[d];
- s,:" by ",string[g],":",string[g]," from t";
+/ pivot (c)olumns, (g)roup column, (d)ata column, (t)able
+pivots:{[c;g;d;t]
+ s:"exec (`$exec string asc distinct ",string[c]," from t)";
+ s,:"#(`$string ",string[c],")!",string d;
+ s,:" by ", "," sv ":" sv'string flip 2#enlist g,();
+ s,:" from t";
  p:eval parse s;
  p}
 
 / parse-tree implementaion of pivot
-/ (t)able, pivot (c)olumns, (g)roup column, (d)ata column
-pivotp:{[t;c;g;d]
+/ pivot (c)olumns, (g)roup column, (d)ata column, (t)able
+pivotp:{[c;g;d;t]
  u:`$string asc distinct t c;
- p:?[t;();g!g;({x#(`$string y)!z};`u;c;d)];
+ p:?[t;();{x!x}g,();({x#(`$string y)!z};`u;c;d)];
  p}
 
 / q implementaion of pivot
-/ (t)able, pivot (c)olumns, (g)roup column, (d)ata column
-pivotq:{[t;c;g;d]
+/ pivot (c)olumns, (g)roup column, (d)ata column, (t)able
+pivotq:{[c;g;d;t]
  u:`$string asc distinct t c;
- g:asc[key g]#g:group g#t;
+ g:asc[key g]#g:group (g,())#t;
  p:u#/:(`$string t c)[g]!'t[d] g;
  p}
 
