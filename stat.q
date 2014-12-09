@@ -13,8 +13,8 @@ kurt:{-3f+avg[x2*x2]%x*x:avg x2:x*x-:avg x}
 bm:{
  if[count[x] mod 2;'`length];
  x:2 0N#x;
- r:sqrt -2f*log x 0;
- theta:2f*acos[-1f]*x 1;
+ r:sqrt -2f*log first x;
+ theta:2f*acos[-1f]*last x;
  x: r*cos theta;
  x,:r*sin theta;
  x}
