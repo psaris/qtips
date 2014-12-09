@@ -17,19 +17,19 @@ nw:{[w;x]ceiling (max[x]-min x)%w}
 sqrtn:{ceiling sqrt count x}
 
 / sturges' bucket algorithm
-sturges:{ceiling 1+2 xlog count x}
+sturges:{ceiling 1f+2f xlog count x}
 
 / normalized skew used for doane
 nskew:{[x].stat.skew[x]%sqrt 6f*(n-2)%(n+1)*3+n:count x}
 
 / doane's bucket algorithm
-doane:{ceiling 1+(2 xlog count x)+2 xlog 1+abs nskew x}
+doane:{ceiling 1f+(2f xlog count x)+2f xlog 1f+abs nskew x}
 
 / scott's windowing algorithm
-scott:{nw[;x] 3.4908*dev[x]*count[x] xexp -1%3}
+scott:{nw[;x] 3.4908*dev[x]*count[x] xexp -1f%3f}
 
 /freedman-diaconis windowing algorithm
-fd:{nw[;x] 2*.stat.iqr[x]*count[x] xexp -1%3}
+fd:{nw[;x] 2f*.stat.iqr[x]*count[x] xexp -1f%3f}
 
 / bar-chart plotting function
 / (c)haracter, (w)indow size, (n)umber of points

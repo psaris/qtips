@@ -41,5 +41,5 @@ stats:{[e]
  e:e pj update neg time from c;
  s:select sum time*1e-6,n:count i,avg nc by func from e;
  s:update timepc:time%n from s;
- s:`pct xdesc update pct:100*time%sum time from s;
+ s:`pct xdesc update pct:100f*time%sum time from s;
  s}
