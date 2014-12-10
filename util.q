@@ -36,7 +36,7 @@ pivots:{[c;g;d;t]
  s,:"#(`$string ",string[c],")!",string d;
  s,:" by ", "," sv ":" sv'string flip 2#enlist g,();
  s,:" from t";
- p:eval parse s;
+ p:eval @[parse s;1;:;t];
  p}
 
 / parse-tree implementaion of pivot
