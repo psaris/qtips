@@ -43,7 +43,8 @@ pivots:{[c;g;d;t]
 / pivot (c)olumns, (g)roup column, (d)ata column, (t)able
 pivotp:{[c;g;d;t]
  u:`$string asc distinct t c;
- p:?[t;();{x!x}g,();({x#(`$string y)!z};`u;c;d)];
+ pf:{x#(`$string y)!z};
+ p:?[t;();g!g,:();(pf;`u;c;d)];
  p}
 
 / q implementaion of pivot
@@ -59,11 +60,9 @@ pivotq:{[c;g;d;t]
 / remaing columns of key are group by columns
 / last column of table is data
 pivot:{[t]
- c:last f:flip k:key t;
- d:last flip value t;
- u:`$string asc distinct c;
- g:asc[key g]#g:group (-1_ key f)#k;
- p:u#/:(`$string c)[g]!'d g;
+ u:`$string asc distinct c:last f:flip key t;
+ pf:{x#(`$string y)!z};
+ p:?[t;();g!g:-1_ key f;(pf;`u;c;last flip value t)];
  p}
 
 / splay table to disk without enumerating sym columns
