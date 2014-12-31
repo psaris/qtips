@@ -4,7 +4,7 @@
 pctile:{[p;x]x iasc[x]"j"$-.5+p*count x}
 
 / 12 uniforms
-u12:{-6f+sum x cut (12f*x)?1f}
+u12:{-6f+sum x cut (12*x)?1f}
 
 skew:{avg[x*x2]%sqrt m2*m2*m2:avg x2:x*x-:avg x}
 kurt:{-3f+avg[x2*x2]%x*x:avg x2:x*x-:avg x}
