@@ -18,7 +18,7 @@ genp:{[id;S;s;r;dtm]
  p}
  
 / round price to nearest tick (up and down)
-tickrnd:{if[99h=type x;x@:y-:1e-6];(x*y;x*1+y:floor y%x)}
+tickrnd:{if[99h=type x;x@:y];(y;x+y:x*floor y%x)}
 
 / randomly delay a timeseries 
 delay:{abs[type x]$x+next deltas[x]*count[x]?1f}
