@@ -29,7 +29,7 @@ instr:{[f]
 / generate list of directories
 dirs:{(` sv x,) each key[x] except `q`Q`h`j`o`prof}
 
-/ generate list of profilable functions
+/ generate list of profileable functions
 lambdas:{x where 100h=(type get@) each x} 
 
 / instrument all functions
