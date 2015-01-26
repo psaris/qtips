@@ -11,7 +11,7 @@ kurt:{-3f+avg[x2*x2]%x*x:avg x2:x*x-:avg x}
 
 / box-muller
 bm:{
- if[count[x] mod 2;'`length];
+ if[count[x] mod 2;'length];
  x:2 0N#x;
  r:sqrt -2f*log first x;
  theta:2f*acos[-1f]*last x;
