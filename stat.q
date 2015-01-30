@@ -63,10 +63,10 @@ norminv:{
  x}
 
 / open high low close
-ohlc:{(first;max;min;last)@\:x}
+ohlc:{`o`h`l`c!(first;max;min;last)@\:x}
 
 / count, min, max, median, standard deviation of x
-summary:{(count;min;max;med;dev)@\:x}
+summary:{`n`mn`mx`md`dv!(count;min;max;med;dev)@\:x}
 
 / error function
 erf:{
