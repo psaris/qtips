@@ -1,10 +1,10 @@
 / empty tables
 ref:.util.sattr 1!flip `id`px`ts`qs`vol`rfr!"jffjff"$\:()
-prices:.util.sattr flip `id`px`time!"jfn"$\:()
+prices:.util.sattr flip `id`px`time!"jfp"$\:()
 price:.util.sattr 1!prices
-trades:.util.sattr flip `id`ts`tp`time!"jjfn"$\:()
+trades:.util.sattr flip `id`ts`tp`time!"jjfp"$\:()
 trade:.util.sattr 1!trades
-quotes:.util.sattr flip `id`bs`bp`ap`as`time!"jjffjn"$\:()
+quotes:.util.sattr flip `id`bs`bp`ap`as`time!"jjffjp"$\:()
 quote:.util.sattr 1!quotes
 
 \d .md
@@ -15,7 +15,7 @@ updp:{[id;tm]
  p:`price id;
  r:`ref id;
  z:.stat.norminv rand 1f;
- f:.stat.gbm[r `vol;r `rfr;((tm:"n"$tm)-p `time)%365D06;z];
+ f:.stat.gbm[r `vol;r `rfr;(tm-p `time)%365D06;z];
  p:`id`px`time!(id;f*p `px;tm);
  `price`prices upsert\: p;
  }
@@ -25,7 +25,7 @@ updq:{[id;tm]
  .log.dbg "updating quote for ", string id;
  px:`price[id;`px];
  r:`ref id;
- q:`id`time!(id;"n"$tm);
+ q:`id`time!(id;tm);
  q,:`bp`ap!.sim.tickrnd[r `ts] px;
  q,:`bs`as!2#1+rand r `qs;
  `quote`quotes upsert\: q;
@@ -36,7 +36,7 @@ updt:{[id;tm]
  if[not id in key `quote;:(::)];
  .log.dbg "updating trade for ", string id;
  q:`quote id;
- t:`id`time!(id;"n"$tm);
+ t:`id`time!(id;tm);
  t,:`ts`tp!.sim.trd[rand 01b;rand 1f] . q `bs`bp`ap`as;
  `trade`trades upsert\: t;
  }

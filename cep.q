@@ -15,7 +15,7 @@ genu:{[et;ids;d;f]flip(`.timer.until;d;et;flip(f;ids))}
 main:{[p;tm]
  r:("J FFJFF";1#",") 0: p `ref;
  `ref upsert `id`px`ts`qs`vol`rfr xcol r;
- `price upsert flip ((0!ref)`id`px),"n"$tm;
+ `price upsert flip ((0!ref)`id`px),tm;
  tms:(n:count ids:key[ref]`id)#tm;
  u:genu[p `eod;ids];
  .timer.add[`timer;`updp;u[d:n?0D00:00:01;`.md.updp];tms];
