@@ -42,7 +42,7 @@ trd:{[b;pct;bs;bp;ap;as](ceiling pct*?[b;bs;as];?[b;bp;ap])}
 / generate trade event
 / (q)uote table and (pct) fill rate
 gent:{[pct;q]
- q:filter[pct] raze (-1_@[;`time;delay]@) each q group q `id;
+ q:filter[pct] raze (-1_@[;`time;delay] q@) each group q `id;
  t:q,' flip `ts`tp!trd[n?01b;(n:count q)?1f] . q `bs`bp`ap`as;
  t:`id`time`ts`tp#t;
  t}
