@@ -51,8 +51,8 @@ pivotp:{[c;g;d;t]
 / pivot (c)olumns, (g)roup column, (d)ata column, (t)able
 pivotq:{[c;g;d;t]
  u:`$string asc distinct t c;
- g:asc[key g]#g:group (g,())#t;
- p:u#/:(`$string t c)[g]!'t[d] g;
+ p:asc[key p]#p:group (g,())#t;
+ p:u#/:(`$string t c)[p]!'t[d] p;
  p}
 
 / keyed-(t)able implementaion of pivot
@@ -74,8 +74,8 @@ tree:{$[x~k:key x;x;11h=type k;raze (.z.s ` sv x,) each k;()]}
 / bid-ask volume (example HDB query)
 / (t)rade table, (q)uote table, (d)a(t)e
 bav:{[t;q;dt]
- t:select id,time,tp,ts from t where date=dt;
- t:aj[`id`time;t] select id,time,bp,ap from q where date=dt;
- t:update bv:ts*tp<=bp,av:ts*tp>=ap from t;
- t:0!select date:dt,sum bv,sum av,tv:sum ts by id from t;
- t}
+ r:select id,time,tp,ts from t where date=dt;
+ r:aj[`id`time;r] select id,time,bp,ap from q where date=dt;
+ r:update bv:ts*tp<=bp,av:ts*tp>=ap from r;
+ r:0!select date:dt,sum bv,sum av,tv:sum ts by id from r;
+ r}
