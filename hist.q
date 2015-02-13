@@ -41,7 +41,7 @@ dot:{[c;w;n]w$neg[n]$1#c}
 
 / use (p)lotting (f)unction to chart (d)ata with max (w)idth
 chart:{[pf;w;d]
- n:value "j"$(m&w)*d%m:max d;
+ n:"j"$(m&w)*value[d]%m:max d;
  d:d,'enlist each pf[w] each n;
  d}
 
