@@ -34,7 +34,7 @@ ac:{x%first x:x{(y#x)$neg[y]#x}/:c-til c:count x-:avg x}
 / x:coefficients, y:data
 horner:{{z+y*x}[y]/[x]}
 
-/ exponentially weighted average
+/ exponentially weighted moving average
 / x:decay rate, y:data
 ewma:{first[y](1f-x)\x*y}
 
