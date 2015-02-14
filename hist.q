@@ -26,7 +26,7 @@ nskew:{[x].stat.skew[x]%sqrt 6f*(n-2)%(n+1)*3+n:count x}
 doane:{ceiling 1f+(2f xlog count x)+2f xlog 1f+abs nskew x}
 
 / scott's windowing algorithm
-scott:{nw[;x] 3.4908*dev[x]*count[x] xexp -1f%3f}
+scott:{nw[;x] 3.4908*sdev[x]*count[x] xexp -1f%3f}
 
 /freedman-diaconis windowing algorithm
 fd:{nw[;x] 2f*.stat.iqr[x]*count[x] xexp -1f%3f}

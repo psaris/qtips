@@ -66,7 +66,7 @@ norminv:{
 ohlc:{`o`h`l`c!(first;max;min;last)@\:x}
 
 / count, min, max, median, standard deviation of x
-summary:{`n`mn`mx`md`dv!(count;min;max;med;dev)@\:x}
+summary:{`n`mn`mx`md`dv!(count;min;max;med;sdev)@\:x}
 
 / error function
 erf:{

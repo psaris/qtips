@@ -10,7 +10,7 @@ mc:{[S;s;r;t;pf;n]
  v}
 
 / monte carlo result statistics
-mcstat:{(sum[x]%n;1.96*dev[x]%sqrt n;n:count x)}
+mcstat:{(sum[x]%n;1.96*sdev[x]%sqrt n;n:count x)}
 
 / european option payoff
 / (c)all flag, stri(k)e, (f)uture prices
