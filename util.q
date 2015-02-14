@@ -29,7 +29,7 @@ mapcol:{[d;t](c^d c:cols t) xcol t}
 / sort dictionary (or keyed table) by key
 kasc:{$[`s=attr k:key x;x;(`s#k i)!value[x]i:iasc k]}
 
-/ string implementaion of pivot
+/ string implementation of pivot
 / pivot (c)olumns, (g)roup column, (d)ata column, (t)able
 pivots:{[c;g;d;t]
  s:"exec (`$exec string asc distinct ",string[c]," from t)";
@@ -39,7 +39,7 @@ pivots:{[c;g;d;t]
  p:eval @[parse s;1;:;t];
  p}
 
-/ parse-tree implementaion of pivot
+/ parse-tree implementation of pivot
 / pivot (c)olumns, (g)roup column, (d)ata column, (t)able
 pivotp:{[c;g;d;t]
  u:`$string asc distinct t c;
@@ -47,7 +47,7 @@ pivotp:{[c;g;d;t]
  p:?[t;();g!g,:();(pf;`u;c;d)];
  p}
 
-/ q implementaion of pivot
+/ q implementation of pivot
 / pivot (c)olumns, (g)roup column, (d)ata column, (t)able
 pivotq:{[c;g;d;t]
  u:`$string asc distinct t c;
@@ -55,7 +55,7 @@ pivotq:{[c;g;d;t]
  p:u#/:(`$string t c)[p]!'t[d] p;
  p}
 
-/ keyed-(t)able implementaion of pivot
+/ keyed-(t)able implementation of pivot
 / last column of key are pivot columns
 / remaing columns of key are group by columns
 / last column of table is data
