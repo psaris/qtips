@@ -1,7 +1,7 @@
 \d .stat
 
 / percentile
-pctile:{[p;x]x iasc[x]"j"$-.5+p*count x}
+pctile:{[p;x]x iasc[x] -1+ceiling p*count x}
 
 / 12 uniforms
 u12:{-6f+sum x cut (12*x)?1f}
