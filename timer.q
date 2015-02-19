@@ -27,7 +27,7 @@ loop:{[t;tm]
  t}
 
 / helper function to generate repeating events
-/ (d)uration, (e)nd (t)ime, (f)unction, tm:current time
+/ (d)elay, (e)nd (t)ime, (f)unction, tm:current time
 until:{[d;et;f;tm]if[tm<et;@[value;f,tm;0N!];:d]}
 
 .z.ts:loop[`timer]
