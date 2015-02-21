@@ -71,6 +71,9 @@ splay:{@[x;`.d,c;:;enlist[c],y c:cols y]}
 / generate a list of nodes(files or variables) within tree node
 tree:{$[x~k:key x;x;11h=type k;raze (.z.s ` sv x,) each k;()]}
 
+/ unenumerate any enumerated columns in table
+unenum:{@[x;;get] where (type each flip x) within 20 76}
+
 / bid-ask volume (example HDB query)
 / (t)rade table, (q)uote table, (d)a(t)e
 bav:{[t;q;dt]
