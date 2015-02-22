@@ -11,7 +11,7 @@ mc:{[S;s;r;t;pf;n]
 
 / monte carlo result statistics
 / (e)xpected (v)alue, (err)or, (n)umber of paths
-mcstat:{`ev`err`n!(sum[x]%n;1.96*sdev[x]%sqrt n;n:count x)}
+mcstat:{`ev`err`n!(sum[x]%n;1.96*dev[x]%sqrt n;n:count x)}
 
 / european option payoff
 / (c)all flag, stri(k)e, (f)uture prices
