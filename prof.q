@@ -8,23 +8,24 @@ prof.rpt::.prof.stats prof.events
 
 pid:id:0
 
-/ instrument (f)unction
-instr:{[f]
- p:get get f;
- a:";" sv string count[p 1]#.Q.a;
- s:"{[",a,"]";
- s,:"t:.z.p;";
- s,:"id:.prof.id+:1;";
- s,:"pid:.prof.pid;.prof.pid:id;";
- s,:"r:",last[p],"[",a,"];";
- s,:".prof.pid:pid;";
- s,:"t:.z.p-t;";
- s,:"`prof.events upsert (id;pid;`",string[f],";t);";
- s,:"r}";
- system "d .",string first p 3;
- f set parse s except "\n";
+/ record timing of a (f)unction with (n)ame when called with (a)rgs
+time:{[n;f;a]
+ s:.z.p;
+ id:.prof.id+:1;
+ pid:.prof.pid;
+ .prof.pid:id;
+ r:f . a;
+ .prof.pid:pid;
+ `prof.events upsert (id;pid;n;.z.p-s);
+ r}
+
+/ instrument function (n)ame
+instr:{[n]
+ m:get f:get n;
+ system "d .",string first m 3;
+ n set (')[.prof.time[n;f];enlist];
  system "d .";
- f}
+ n}
 
 / generate list of directories
 dirs:{(` sv x,) each key[x] except `q`Q`h`j`o`prof}
