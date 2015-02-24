@@ -18,10 +18,10 @@ main:{[p;tm]
  `price upsert flip ((0!ref)`id`px),tm;
  tms:(n:count ids:key[ref]`id)#tm;
  u:genu[p `eod;ids];
- .timer.add[`timer;`updp;u[d:n?0D00:00:01;`.md.updp];tms];
- .timer.add[`timer;`updq;u[d+:n?0D00:00:01;`.md.updq];tms];
- .timer.add[`timer;`updt;u[d+:n?0D00:00:01;`.md.updt];tms];
- .timer.add[`timer;`dump;(`.md.dump;p `db);p[`eod]+"d"$tm];
+ .timer.add[`timer.job;`updp;u[d:n?0D00:00:01;`.md.updp];tms];
+ .timer.add[`timer.job;`updq;u[d+:n?0D00:00:01;`.md.updq];tms];
+ .timer.add[`timer.job;`updt;u[d+:n?0D00:00:01;`.md.updt];tms];
+ .timer.add[`timer.job;`dump;(`.md.dump;p `db);p[`eod]+"d"$tm];
  }
 
 p:.opt.getopt[c;`ref`db] .z.x
