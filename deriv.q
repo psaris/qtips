@@ -45,4 +45,5 @@ bsm:{[S;k;r;t;c;s]
  rho:t*kn;
  d:`price`delta`gamma`vega`theta`rho;
  d!:(p;n1;g;sn*ssrt;th;rho);
+ if[0h<type p;d:flip d];
  d}
