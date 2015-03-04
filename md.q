@@ -37,7 +37,7 @@ updt:{[id;tm]
  .log.dbg "updating trade for ", string id;
  q:`quote id;
  t:`id`time!(id;tm);
- t,:`ts`tp!.sim.trd[rand 01b;rand 1f] . q `bs`bp`ap`as;
+ t,:`ts`tp!.sim.trd[rand 0b;rand 1f] . q `bs`bp`ap`as;
  `trade`trades upsert\: t;
  }
 
