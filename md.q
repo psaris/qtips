@@ -27,7 +27,7 @@ updq:{[id;tm]
  r:`ref id;
  q:`id`time!(id;tm);
  q,:`bp`ap!.sim.tickrnd[r `ts] px;
- q,:`bs`as!2#1+rand r `qs;
+ q,:`bs`as!1+2?r `qs;
  `quote`quotes upsert\: q;
  }
 
