@@ -19,4 +19,5 @@ usage:{[c;f]
  a:wrap[(7#" "),"-";" "] string c `opt;
  a:a,'wrap["<";"> "] c `doc;
  a:a,'wrap["(";")"] -3!'c `def;
- u,a}
+ u,:a;
+ u}
