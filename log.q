@@ -3,7 +3,7 @@
 h:-2              / handle to print log
 lvl:2             / log level
 unit:"BKMGTP"     / memory unit character
-mult:5 *[1024]\ 1 / memory multiplier
+mult:5 (1024*)\ 1 / memory multiplier
 
 / build memory string
 mem:{@[string"i"$(3#x)%mult m;2;,;unit m:mult bin x 2]}
