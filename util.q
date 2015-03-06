@@ -72,7 +72,7 @@ splay:{@[x;`.d,c;:;enlist[c],y c:cols y]}
 tree:{$[x~k:key x;x;11h=type k;raze (.z.s ` sv x,) each k;()]}
 
 / unenumerate any enumerated columns in table
-unenum:{@[x;;get] where (type each flip x) within 20 76}
+unenum:{@[x;where (type each flip x) within 20 76;get]}
 
 / bid-ask volume (example HDB query)
 / (t)rade table, (q)uote table, (d)a(t)e
