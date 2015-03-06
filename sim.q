@@ -30,7 +30,7 @@ filter:{y asc (neg"j"$x*n)?n:count y}
 / (t)ick (s)ize, (q)uote (s)ize, (p)rice path
 genq:{[ts;qs;p]
  q:p,'flip `bp`ap!tickrnd[ts] p `price;
- q:q,'flip `bs`as!count[p]?/:2#qs;
+ q:q,'flip `bs`as!1+count[p]?/:2#qs;
  q:`id`time`bs`bp`ap`as#q;
  q}
 
