@@ -1,4 +1,4 @@
-/timer jobs
+/ timer jobs
 timer.job:flip `name`func`time!"s*p"$\:()
 timer.job,:(`;();0Wp)
 
