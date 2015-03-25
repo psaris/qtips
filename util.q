@@ -60,9 +60,9 @@ pivotq:{[c;g;d;t]
 / remaing columns of key are group by columns
 / last column of table is data
 pivot:{[t]
- u:`$string asc distinct c:last f:flip key t;
+ u:`$string asc distinct last f:flip key t;
  pf:{x#(`$string y)!z};
- p:?[t;();g!g:-1_ key f;(pf;`u;c;last flip value t)];
+ p:?[t;();g!g:-1_ k;(pf;`u;last k:key f;last key flip value t)];
  p}
 
 / splay table to disk without enumerating sym columns
