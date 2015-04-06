@@ -1,0 +1,98 @@
+= Q Tips Errata
+
+Despite my best efforts to create the book with zero errors, readers
+have pointed out a few bugs. The Kindle version has all corrections
+and is available for re-download. Please report any new errata to
+mailto:nick.psaris@gmail.com[Nick Psaris].
+
+
+== Errata
+
+* Foreword
+* Preface
+* Chapter 1
+* Chapter 2
+* Chapter 3
+* Chapter 4
++
+--
+** p. 44, Reshape, should read: The second line of the +.stat.bm+
+  function uses the "*#*" operator ...
++
+'Posted 2015.03.27. Julien Quentin Tran'
+** p. 44, Reshape, the second sentence should read: The basic form of
+   the take operator "*#*" takes ...
++
+'Posted 2015.03.27. Julien Quentin Tran'
+--
+* Chapter 5
++
+--
+** p. 53, Identity vs Equality, the second sentence should read: For atoms, the match operator and the equality operator "=" have the *same* behavior.
++
+'Posted 2015.03.27. Julien Quentin Tran'
+--
+* Chapter 6
+* Chapter 7
+* Chapter 8
+* Chapter 9
++
+--
+** p. 119, The second listing should not have the extra:
++
+----
+q)o
+----
++
+'Posted 2015.03.27. Julien Quentin Tran'
+--
+* Chapter 10
++
+--
+** p. 132, Logging Library, The final listing should be labeled +.log.hdr+.
++
+'Posted 2015.04.04. Lam Hin Yan'
+--
+* Chapter 11
+* Chapter 12
+* Chapter 13
+* Chapter 14
++
+--
+** p. 184, The implementation of +.util.pivot+ should read:
++
+----
+pivot:{[t]
+ u:`$string asc distinct last f:flip key t;
+ pf:{x#(`$string y)!z};
+ p:?[t;();g!g:-1_ k;(pf;`u;last k:key f;last key flip value t)];
+ p}
+----
++
+'Posted 2015.03.26. Nick Psaris'
+--
+* Chapter 15
+* Chapter 16
++
+--
+** p. 227, Subscriptions, The first sentence should read: Asynchronous
+   messages are often used to send messages as fast *as* possible ...
++
+'Posted 2015.04.04. Lam Hin Yan'
+--
+* Chapter 17
+* Appendix A
++
+--
+** p. 274, Utilities, The implementation of +.util.pivot+ should read:
++
+----
+pivot:{[t]
+ u:`$string asc distinct last f:flip key t;
+ pf:{x#(`$string y)!z};
+ p:?[t;();g!g:-1_ k;(pf;`u;last k:key f;last key flip value t)];
+ p}
+----
++
+'Posted 2015.03.26. Nick Psaris'
+--
