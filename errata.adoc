@@ -12,6 +12,17 @@ mailto:nick.psaris@gmail.com[Nick Psaris].
 * Preface
 * Chapter 1
 * Chapter 2
++
+--
+** p. 9, Running q, the fifth sentence should read: +*4*()core+
+indicates that kdb+ is capable of seeing *4* cores on my machine.
++
+'Posted 2015.05.03. Danila Deliya'
+** p. 17, Parenthesis, the first sentence should read: Parentheses can
+also be used *to* enforce operator precedence.
++
+'Posted 2015.05.03. Danila Deliya'
+--
 * Chapter 3
 * Chapter 4
 +
@@ -24,6 +35,15 @@ mailto:nick.psaris@gmail.com[Nick Psaris].
    the take operator "*#*" takes ...
 +
 'Posted 2015.03.27. Julien Quentin Tran'
+** p. 46, Loading Code, the last sentence should conclude: we now move
+to a slower generator of normal random variables that only requires a
+single *uniform* variable as input.
++
+'Posted 2015.05.03. Danila Deliya'
+** p. 47, Horner's Method, the first sentence should begin: The
+*fifth* line.
++
+'Posted 2015.05.03. Danila Deliya'
 --
 * Chapter 5
 +
