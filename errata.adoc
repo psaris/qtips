@@ -58,6 +58,11 @@ single *uniform* variable as input.
 * Chapter 9
 +
 --
+** p. 116, Trades, the second paragraph should begin: The +prev+
+   operator is similar **to** the +next+ operator.
++
+'Posted 2015.05.13. Danila Deliya'
++
 ** p. 119, The second listing should not have the extra:
 +
 ----
@@ -68,17 +73,73 @@ q)o
 --
 * Chapter 10
 +
---
+** p. 125, Nulls and Infinities, the third sentence of the last
+   paragraph should end: perhaps the most appropriate trade price
+   would be the last known trade **price**.
++
+'Posted 2015.05.13. Danila Deliya'
++
+** p. 129, Drop, the first sentence on the page should be: The
+   **second** line of the function indexes into the table to find the
+   **job +j+**.
++
+'Posted 2015.05.13. Danila Deliya'
++
+** p. 129, Drop, the fourth paragraph should also refer to the **+j+**
+   dictionary.
++
+'Posted 2015.05.13. Danila Deliya'
++
+** p. 132, Logging Library, The second sentence of the third paragraph
+   in the section should begin:  In this case, the monadic function **+(1024*)+**.
++
+'Posted 2015.05.13. Danila Deliya'
++
 ** p. 132, Logging Library, The final listing should be labeled +.log.hdr+.
 +
 'Posted 2015.04.04. Lam Hin Yan'
++
+** p. 135, Configuration, The first new paragraph should mention five
+   parameters: Our CEP server will require **five** parameters: a file
+   path to load reference data, a time to run the end of day
+   processing, a directory to save the market data, **a debug flag**,
+   and a log level to control how much logging is displayed.
++
+'Posted 2015.04.04. Lam Hin Yan'
++
+** p. 135, Configuration, The second paragraph should mention five
+   parameters as well: The table now has one empty row, and **five**
+   options.
++   
+'Posted 2015.04.04. Lam Hin Yan'
++
+** p. 135, Parsing User Command Line Arguments, The last paragraph
+   should begin: The **second** line of the function.
++   
+'Posted 2015.05.13. Danila Deliya'
 --
+
 * Chapter 11
 * Chapter 12
 * Chapter 13
 * Chapter 14
 +
 --
+** p. 172, Dot Notation, The last sentence should end: it **is** safer
+   to always use explicit casting instead of using `dot` notation.
++   
+'Posted 2015.05.13. Danila Deliya'
++
+** p. 177, Exec by, The third paragraph should begin: This works
+because calling **+first+**.
++   
+'Posted 2015.05.13. Danila Deliya'
++
+** p. 181, Building a Pivot Table, The second sentence of the first
+   paragraph should begin: Our dataset has a **price**
++   
+'Posted 2015.05.13. Danila Deliya'
++
 ** p. 184, The implementation of +.util.pivot+ should read:
 +
 ----
@@ -90,8 +151,42 @@ pivot:{[t]
 ----
 +
 'Posted 2015.03.26. Nick Psaris'
++
+** p. 194, Asof joins, The third sentence of the first paragraph
+   should begin: In fact, **the** asof join +aj+ operator.
++   
+'Posted 2015.05.13. Danila Deliya'
++
+** p. 198, Asof joins, The first sentence should read: Looking forward
+   in time is generally a bad practice when attempting **to**
+   reproduce a realistic simulation of historical events.
++   
+'Posted 2015.05.13. Danila Deliya'
 --
 * Chapter 15
++
+--
+** p. 209, The +sym+ File, The second listing should begin with the
+   following command:
++
+----
+q)prices`id
+----
++
+'Posted 2015.05.13. Danila Deliya'
++
+** p. 211, Virtual Column, The section should begin: **Each table in
+our +qdb+ database starts with a +date+ column.** But where did this
+column come from?
++
+'Posted 2015.05.13. Danila Deliya'
++
+** p. 218, Compressing by Default, The last sentence should read: To
+clear the compression configuration we can use the **`\x`** system
+command and +.z.zd+ will be cleared.
++
+'Posted 2015.05.13. Danila Deliya'
+--
 * Chapter 16
 +
 --
