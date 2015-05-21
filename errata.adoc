@@ -43,7 +43,7 @@ single *uniform* variable as input.
 +
 'Posted 2015.05.03. Danila Deliya'
 * p. 47, Horner's Method, the first sentence should begin: The
-*fifth* line.
+*fifth* line ...
 +
 'Posted 2015.05.03. Danila Deliya'
 
@@ -64,7 +64,7 @@ single *uniform* variable as input.
 == Chapter 9
 
 * p. 116, Trades, the second paragraph should begin: The +prev+
-   operator is similar *to* the +next+ operator.
+   operator is similar *to* the +next+ operator ...
 +
 'Posted 2015.05.13. Danila Deliya'
 * p. 119, The second listing should not have the extra:
@@ -90,7 +90,8 @@ q)o
 +
 'Posted 2015.05.13. Danila Deliya'
 * p. 132, Logging Library, The second sentence of the third paragraph
-   in the section should begin:  In this case, the monadic function *`(1024*)`*.
+   in the section should begin:  In this case, the monadic function
+   *`(1024*)`* ...
 +
 'Posted 2015.05.13. Danila Deliya'
 * p. 132, Logging Library, The final listing should be labeled +.log.hdr+.
@@ -109,7 +110,7 @@ q)o
 +
 'Posted 2015.04.04. Lam Hin Yan'
 * p. 135, Parsing User Command Line Arguments, The last paragraph
-  should begin: The *second* line of the function.
+  should begin: The *second* line of the function ...
 +
 'Posted 2015.05.13. Danila Deliya'
 
@@ -126,11 +127,11 @@ q)o
 +
 'Posted 2015.05.13. Danila Deliya'
 * p. 177, Exec by, The third paragraph should begin: This works
-  because calling *+first+*.
+  because calling *+first+* ...
 +
 'Posted 2015.05.13. Danila Deliya'
 * p. 181, Building a Pivot Table, The second sentence of the first
-  paragraph should begin: Our dataset has a *price*.
+  paragraph should begin: Our dataset has a *price* ...
 +
 'Posted 2015.05.13. Danila Deliya'
 * p. 184, The implementation of +.util.pivot+ should read:
@@ -145,7 +146,7 @@ pivot:{[t]
 +
 'Posted 2015.03.26. Nick Psaris'
 * p. 194, Asof joins, The third sentence of the first paragraph
-  should begin: In fact, *the* asof join +aj+ operator.
+  should begin: In fact, *the* asof join +aj+ operator ...
 +
 'Posted 2015.05.13. Danila Deliya'
 * p. 198, Asof joins, The first sentence should read: Looking forward
@@ -174,6 +175,15 @@ clear the compression configuration we can use the *`\x`* system
 command and +.z.zd+ will be cleared.
 +
 'Posted 2015.05.13. Danila Deliya'
+* p. 221, Remote File Systems, The last sentence of the first paragaph
+should end: it is conceivable that compressing the data can actually
+*increase* the performance of reading data from our kdb+ database.
++
+'Posted 2015.05.17. Danila Deliya'
+* p. 224, Slave Layout, The last sentence should begin: The next
+  chapter *discusses* ...
++
+'Posted 2015.05.17. Danila Deliya'
 
 == Chapter 16
 
@@ -183,6 +193,53 @@ command and +.z.zd+ will be cleared.
 'Posted 2015.04.04. Lam Hin Yan'
 
 == Chapter 17
+
+* p. 237, Instrumenting Functions, The second sentence of the
+  paragraph after the definition of +.prof.instr+ should begin: The
+  *third* line of the function ...
++
+'Posted 2015.05.17. Danila Deliya'
+* p. 239, Traversing the Directory Tree, The second sentence of the
+  first paragraph should read: So we can exclude +q+, +Q+, +h+, *+j+*,
+  +o+, and +prof+ from the list of directories to inspect.
++
+'Posted 2015.05.17. Danila Deliya'
+* p. 251, Path Dependent Payoffs, The first sentence should read: The
+  Up and Out option is worth *less*.
++
+'Posted 2015.05.17. Danila Deliya'
+* p. 254, Brawn vs Brain, The first sentence of the first paragraph
+  should begin: For example, if we assign a projection of
+  +.deriv.bsm+ to *+f+* ...
++
+'Posted 2015.05.17. Danila Deliya'
+* p. 258, Grouping Data, The first sentence of the fourth paragraph
+  should begin: The operator assumes, but does not enforce, *that* our
+  list of bins ...
++
+'Posted 2015.05.17. Danila Deliya'
+* p. 261, Alternate Bin Algorithms, The first sentence should read:
+  But the +sturges+ method does not *handle* skewed data well.
++
+'Posted 2015.05.17. Danila Deliya'
+* p. 262, Alternate Bin Algorithms, The second footnote should begin:
+  *Freedman*, David; Diaconis, P. (1981).  ...
++
+'Posted 2015.05.17. Danila Deliya'
+
+== Selected Web Resources
+
+* p. 267, Kx Systems Links, The description of [20] Kdb+ IPC protocol
+  should end: Sample deserialization implementations can be found in
+  the *Kx Connectivity Resources repository http://kx.com/q/c/*.
++
+'Posted 2015.05.17. Danila Deliya'
+
+== List of Terms
+* p. 271, Projection, The last sentence should read: Monadic functions
+can not *be* projected, as the function will be instantly called.
++
+'Posted 2015.05.17. Danila Deliya'
 
 == Appendix A
 
