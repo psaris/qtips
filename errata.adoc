@@ -3,7 +3,8 @@
 
 Despite my best efforts to create the book with zero errors, readers
 have pointed out a few bugs. The Kindle version has all corrections
-and is available for re-download. Please report any new errata to
+and is available for re-download.  Recent versions of the printed book
+have them as well.  Please report any new errata to
 mailto:nick.psaris@gmail.com[Nick Psaris].
 
 toc::[]
