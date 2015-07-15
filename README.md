@@ -7,7 +7,7 @@ This project contains the source files for "Q Tips: Fast, Scalable and Maintaina
 **Q Tips** can be purchased on [Amazon](http://www.amazon.com/Tips-Fast-Scalable-Maintainable-Kdb/dp/9881389909).
 A [Kindle version](http://www.amazon.com/Tips-Fast-Scalable-Maintainable-Kdb-ebook/dp/B00UZ8OMME) is also available.
 Books may be purchased in quantity and/or special sales by contacting the publisher,
-[Vector Sigma](mailto:sales@vector-sigma.com).
+[Vector Sigma](mailto:sales@vector-sigma.com).  Read a review by Yang Guo published by [Vector Magazine](http://archive.vector.org.uk/art10501500).
 
 Check out Kx System's [press release](http://kx.com/press-releases-150325.php).
 
