@@ -47,6 +47,14 @@ single *uniform* variable as input.
 *fifth* line ...
 +
 'Posted 2015.05.03. Danila Deliya'
+* p. 49, Over, the second listing should multiply by .1:
++
+----
+q)0 (.9)\.1*til 5
+0 0.1 0.29 0.561 0.9049
+----
++
+'Posted 2015.08.01. https://twitter.com/SrBufi'
 
 == Chapter 5
 
