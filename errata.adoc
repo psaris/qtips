@@ -13,137 +13,148 @@ toc::[]
 
 == Preface
 
-== Chapter 1
+== Chapter 1 _Introduction_
 
-== Chapter 2
+== Chapter 2 _Getting Started_
 
-* p. 9, Running q, the fifth sentence should read: +*4*()core+
-indicates that kdb+ is capable of seeing *4* cores on my machine.
+* p. 9, *2.1 Installing KDB+*, _Running q_, the fifth sentence should
+ read: +*4*()core+ indicates that kdb+ is capable of seeing *4* cores
+ on my machine.
 +
-'Posted 2015.05.03. Danila Deliya'
-* p. 17, Parenthesis, the first sentence should read: Parentheses can
-also be used *to* enforce operator precedence.
+_Posted 2015.05.03. Danila Deliya_
+* p. 17, *2.3 Syntax Rules*, _Parentheses_, the first sentence should
+ read: Parentheses can also be used *to* enforce operator precedence.
 +
-'Posted 2015.05.03. Danila Deliya'
+_Posted 2015.05.03. Danila Deliya_
 
-== Chapter 3
+== Chapter 3 _Generating Data_
 
-== Chapter 4
+== Chapter 4 _Functions_
 
-* p. 44, Reshape, should read: The second line of the +.stat.bm+
-  function uses the "*#*" operator ...
+* p. 44, *4.2 Box Muller*, _Reshape_, should read: The second line of
+  the +.stat.bm+ function uses the "*#*" operator ...
 +
-'Posted 2015.03.27. Julien Quentin Tran'
-* p. 44, Reshape, the second sentence should read: The basic form of
-   the take operator "*#*" takes ...
+_Posted 2015.03.27. Julien Quentin Tran_
+* p. 44, *4.2 Box Muller*,_Reshape_, the second sentence should read:
+   The basic form of the take operator "*#*" takes ...
 +
-'Posted 2015.03.27. Julien Quentin Tran'
-* p. 46, Loading Code, the last sentence should conclude: we now move
-to a slower generator of normal random variables that only requires a
-single *uniform* variable as input.
+_Posted 2015.03.27. Julien Quentin Tran_
+* p. 46, *4.2 Box Muller*, _Loading Code_, the last sentence should
+ conclude: we now move to a slower generator of normal random
+ variables that only requires a single *uniform* variable as input.
 +
-'Posted 2015.05.03. Danila Deliya'
-* p. 47, Horner's Method, the first sentence should begin: The
-*fifth* line ...
+_Posted 2015.05.03. Danila Deliya_
+* p. 47, *4.3 Beasley-Springer-Moro*, _Horner's Method_, the first
+  sentence should begin: The *fifth* line ...
 +
-'Posted 2015.05.03. Danila Deliya'
-* p. 49, Over, the second listing should multiply by .1:
+_Posted 2015.05.03. Danila Deliya_
+* p. 49, *4.3 Beasley-Springer-Moro*, _Over_, the second listing
+  should multiply by .1:
 +
 ----
 q)0 (.9)\.1*til 5
 0 0.1 0.29 0.561 0.9049
 ----
 +
-'Posted 2015.08.01. https://twitter.com/SrBufi '
+_Posted 2015.08.01. https://twitter.com/SrBufi_
 
-== Chapter 5
+== Chapter 5 _Code Organization_
 
-* p. 53, Identity vs Equality, the second sentence should read: For
-   atoms, the match operator and the equality operator "=" have the
-   *same* behavior.
+* p. 53, *5.1 Libraries*, _Identity vs Equality_, the second sentence
+  should read: For atoms, the match operator and the equality operator
+  "=" have the *same* behavior.
 +
-'Posted 2015.03.27. Julien Quentin Tran'
+_Posted 2015.03.27. Julien Quentin Tran_
 
-== Chapter 6
+== Chapter 6 _A Random Walk_
 
-== Chapter 7
+== Chapter 7 _Building a Table_
 
-== Chapter 8
+== Chapter 8 _Large Tables_
 
-== Chapter 9
+== Chapter 9 _Trades and Quotes_
 
-* p. 116, Trades, the second paragraph should begin: The +prev+
-   operator is similar *to* the +next+ operator ...
+* p. 116, *9.3 Trades*, _Delaying a Time Series_, the second paragraph
+  should begin: The +prev+ operator is similar *to* the +next+
+  operator ...
 +
-'Posted 2015.05.13. Danila Deliya'
-* p. 119, The second listing should not have the extra:
+_Posted 2015.05.13. Danila Deliya_
+* p. 119, *9.3 Trades*, _Grouping_, The second listing should not have
+  the extra:
 +
 ----
 q)o
 ----
 +
-'Posted 2015.03.27. Julien Quentin Tran'
+_Posted 2015.03.27. Julien Quentin Tran_
 
-== Chapter 10
-* p. 125, Nulls and Infinities, the third sentence of the last
-  paragraph should end: perhaps the most appropriate trade price would
-  be the last known trade *price*.
+== Chapter 10 _CEP Engine Components_
+* p. 125, *10.1 Timer Events*, _Nulls and Infinities_, the third
+  sentence of the last paragraph should end: perhaps the most
+  appropriate trade price would be the last known trade *price*.
 +
-'Posted 2015.05.13. Danila Deliya'
-* p. 129, Drop, the first sentence on the page should be: The second*
-   *line of the function indexes into the table to find the job +j+*.
+_Posted 2015.05.13. Danila Deliya_
+* p. 129, *10.1 Timer Events*, _Drop_, the first sentence on the page
+  should be: The second line of the function indexes into the table to
+  find the job *+j+*.
 +
-'Posted 2015.05.13. Danila Deliya'
-* p. 129, Drop, the fourth paragraph should also refer to the *+j+*
-   dictionary.
+_Posted 2015.05.13. Danila Deliya_
+* p. 129, *10.1 Timer Events*, _Drop_, the fourth paragraph should
+  also refer to the *+j+* dictionary.
 +
-'Posted 2015.05.13. Danila Deliya'
-* p. 132, Logging Library, The second sentence of the third paragraph
-   in the section should begin:  In this case, the monadic function
-   *`(1024*)`* ...
+_Posted 2015.05.13. Danila Deliya_
+* p. 132, *10.2 Logging*, _Logging Library_, The second sentence of
+   the third paragraph in the section should begin: In this case, the
+   monadic function *`(1024*)`* ...
 +
-'Posted 2015.05.13. Danila Deliya'
-* p. 132, Logging Library, The final listing should be labeled +.log.hdr+.
+_Posted 2015.05.13. Danila Deliya_
+* p. 132, *10.2 Logging*, _Logging Library_, The final listing should
+  be labeled +.log.hdr+.
 +
-'Posted 2015.04.04. Lam Hin Yan'
-* p. 135, Configuration, The first new paragraph should mention five
-  parameters: Our CEP server will require *five* parameters: a file
-  path to load reference data, a time to run the end of day
-  processing, a directory to save the market data, *a debug flag*, and
-  a log level to control how much logging is displayed.
+_Posted 2015.04.04. Lam Hin Yan_
+* p. 135, *10.3 Command Line Options*, _Configuration_, The first new
+  paragraph should mention five parameters: Our CEP server will
+  require *five* parameters: a file path to load reference data, a
+  time to run the end of day processing, a directory to save the
+  market data, *a debug flag*, and a log level to control how much
+  logging is displayed.
 +
-'Posted 2015.04.04. Lam Hin Yan'
-* p. 135, Configuration, The second paragraph should mention five
-  parameters as well: The table now has one empty row, and *five*
-  options.
+_Posted 2015.04.04. Lam Hin Yan_
+* p. 135, *10.3 Command Line Options*, _Configuration_, The second
+  paragraph should mention five parameters as well: The table now has
+  one empty row, and *five* options.
 +
-'Posted 2015.04.04. Lam Hin Yan'
-* p. 135, Parsing User Command Line Arguments, The last paragraph
-  should begin: The *second* line of the function ...
+_Posted 2015.04.04. Lam Hin Yan_
+* p. 135,*10.3 Command Line Options*, _Parsing User Command Line
+  Arguments_, The last paragraph should begin: The *second* line of
+  the function ...
 +
-'Posted 2015.05.13. Danila Deliya'
+_Posted 2015.05.13. Danila Deliya_
 
-== Chapter 11
+== Chapter 11 _Running a CEP Engine_
 
-== Chapter 12
+== Chapter 12 _Security_
 
-== Chapter 13
+== Chapter 13 _Debugging_
 
-== Chapter 14
+== Chapter 14 _Q-SQL_
 
-* p. 172, Dot Notation, The last sentence should end: it *is* safer
-  to always use explicit casting instead of using `dot` notation.
+* p. 172, *14.1 Syntax*, _Dot Notation_, The last sentence should end:
+  it *is* safer to always use explicit casting instead of using `dot`
+  notation.
 +
-'Posted 2015.05.13. Danila Deliya'
-* p. 177, Exec by, The third paragraph should begin: This works
-  because calling *+first+* ...
+_Posted 2015.05.13. Danila Deliya_
+* p. 177, *14.1 Syntax*, _Exec by_, The third paragraph should begin:
+  This works because calling *+first+* ...
 +
-'Posted 2015.05.13. Danila Deliya'
-* p. 181, Building a Pivot Table, The second sentence of the first
-  paragraph should begin: Our dataset has a *price* ...
+_Posted 2015.05.13. Danila Deliya_
+* p. 181, *14.2 Pivot Tables*, _Building a Pivot Table_, The second
+  sentence of the first paragraph should begin: Our dataset has a
+  *price* ...
 +
-'Posted 2015.05.13. Danila Deliya'
-* p. 184, The implementation of +.util.pivot+ should read:
+_Posted 2015.05.13. Danila Deliya_
+* p. 184, *14.2 Pivot Tables*, _Writing a Pivot Function_, The
+  implementation of +.util.pivot+ should read:
 +
 ----
 pivot:{[t]
@@ -153,106 +164,113 @@ pivot:{[t]
  p}
 ----
 +
-'Posted 2015.03.26. Nick Psaris'
-* p. 194, Asof joins, The third sentence of the first paragraph
-  should begin: In fact, *the* asof join +aj+ operator ...
+_Posted 2015.03.26. Nick Psaris_
+* p. 194, *14.4 Joining Datasets*, _Asof joins_, The third sentence of
+  the first paragraph should begin: In fact, *the* asof join +aj+
+  operator ...
 +
-'Posted 2015.05.13. Danila Deliya'
-* p. 198, Asof joins, The first sentence should read: Looking forward
-  in time is generally a bad practice when attempting *to*
-  reproduce a realistic simulation of historical events.
+_Posted 2015.05.13. Danila Deliya_
+* p. 198, *14.4 Joining Datasets*, _Asof joins_, The first sentence
+  should read: Looking forward in time is generally a bad practice
+  when attempting *to* reproduce a realistic simulation of historical
+  events.
 +
-'Posted 2015.05.13. Danila Deliya'
+_Posted 2015.05.13. Danila Deliya_
 
-== Chapter 15
+== Chapter 15 _Big Data_
 
-* p. 209, The +sym+ File, The second listing should begin with the
-   following command:
+* p. 209, *15.1 Partitioning By Column*, _The +sym+ File_, The second
+  listing should begin with the following command:
 +
 ----
 q)prices`id
 ----
 +
-'Posted 2015.05.13. Danila Deliya'
-* p. 211, Virtual Column, The section should begin: *Each table in
-our +qdb+ database starts with a +date+ column.* But where did this
-column come from?
+_Posted 2015.05.13. Danila Deliya_
+* p. 211, *15.2 Partitioning By Row*, _Virtual Column_, The section
+  should begin: *Each table in our +qdb+ database starts with a +date+
+  column.* But where did this column come from?
 +
-'Posted 2015.05.13. Danila Deliya'
-* p. 218, Compressing by Default, The last sentence should read: To
-clear the compression configuration we can use the *`\x`* system
-command and +.z.zd+ will be cleared.
+_Posted 2015.05.13. Danila Deliya_
+* p. 218, *15.4 Compressing Tables*, _Compressing by Default_, The
+  last sentence should read: To clear the compression configuration we
+  can use the *`\x`* system command and +.z.zd+ will be cleared.
 +
-'Posted 2015.05.13. Danila Deliya'
-* p. 221, Remote File Systems, The last sentence of the first paragaph
-should end: it is conceivable that compressing the data can actually
-*increase* the performance of reading data from our kdb+ database.
+_Posted 2015.05.13. Danila Deliya_
+* p. 221, *15.5 Mapped Data*, _Remote File Systems_, The last sentence
+  of the first paragaph should end: it is conceivable that compressing
+  the data can actually *increase* the performance of reading data
+  from our kdb+ database.
 +
-'Posted 2015.05.17. Danila Deliya'
-* p. 224, Slave Layout, The last sentence should begin: The next
-  chapter *discusses* ...
+_Posted 2015.05.17. Danila Deliya_
+* p. 224, *15.6 Grid Computing*, _Slave Layout_, The last sentence
+  should begin: The next chapter *discusses* ...
 +
-'Posted 2015.05.17. Danila Deliya'
+_Posted 2015.05.17. Danila Deliya_
 
-== Chapter 16
+== Chapter 16 _Remotely Accessing Data_
 
-* p. 227, Subscriptions, The first sentence should read: Asynchronous
-   messages are often used to send messages as fast *as* possible ...
+* p. 227, *16.1 Q to Q*, _Subscriptions_, The first sentence should
+   read: Asynchronous messages are often used to send messages as fast
+   *as* possible ...
 +
-'Posted 2015.04.04. Lam Hin Yan'
+_Posted 2015.04.04. Lam Hin Yan_
 
-== Chapter 17
+== Chapter 17 _Advanced Techniques_
 
-* p. 237, Instrumenting Functions, The second sentence of the
-  paragraph after the definition of +.prof.instr+ should begin: The
-  *third* line of the function ...
+* p. 237, *17.1 Profiling Q Functions*, _Instrumenting Functions_, The
+  second sentence of the paragraph after the definition of
+  +.prof.instr+ should begin: The *third* line of the function ...
 +
-'Posted 2015.05.17. Danila Deliya'
-* p. 239, Traversing the Directory Tree, The second sentence of the
-  first paragraph should read: So we can exclude +q+, +Q+, +h+, *+j+*,
-  +o+, and +prof+ from the list of directories to inspect.
+_Posted 2015.05.17. Danila Deliya_
+* p. 239, *17.1 Profiling Q Functions*, _Traversing the Directory
+  Tree_, The second sentence of the first paragraph should read: So we
+  can exclude +q+, +Q+, +h+, *+j+*, +o+, and +prof+ from the list of
+  directories to inspect.
 +
-'Posted 2015.05.17. Danila Deliya'
-* p. 251, Path Dependent Payoffs, The first sentence should read: The
-  Up and Out option is worth *less*.
+_Posted 2015.05.17. Danila Deliya_
+* p. 251, *17.2 Derivative Pricing*, _Path Dependent Payoffs_, The
+  first sentence should read: The Up and Out option is worth *less*.
 +
-'Posted 2015.05.17. Danila Deliya'
-* p. 254, Brawn vs Brain, The first sentence of the first paragraph
-  should begin: For example, if we assign a projection of
-  +.deriv.bsm+ to *+f+* ...
+_Posted 2015.05.17. Danila Deliya_
+* p. 254, *17.2 Derivative Pricing*, _Brawn vs Brain_, The first
+  sentence of the first paragraph should begin: For example, if we
+  assign a projection of +.deriv.bsm+ to *+f+* ...
 +
-'Posted 2015.05.17. Danila Deliya'
-* p. 258, Grouping Data, The first sentence of the fourth paragraph
-  should begin: The operator assumes, but does not enforce, *that* our
-  list of bins ...
+_Posted 2015.05.17. Danila Deliya_
+* p. 258, *17.3 Histograms*, _Grouping Data_, The first sentence of
+  the fourth paragraph should begin: The operator assumes, but does
+  not enforce, *that* our list of bins ...
 +
-'Posted 2015.05.17. Danila Deliya'
-* p. 261, Alternate Bin Algorithms, The first sentence should read:
-  But the +sturges+ method does not *handle* skewed data well.
+_Posted 2015.05.17. Danila Deliya_
+* p. 261, *17.3 Histograms*, _Alternate Bin Algorithms_, The first
+  sentence should read: But the +sturges+ method does not *handle*
+  skewed data well.
 +
-'Posted 2015.05.17. Danila Deliya'
-* p. 262, Alternate Bin Algorithms, The second footnote should begin:
-  *Freedman*, David; Diaconis, P. (1981).  ...
+_Posted 2015.05.17. Danila Deliya_
+* p. 262, *17.3 Histograms*, _Alternate Bin Algorithms_, The second
+  footnote should begin: *Freedman*, David; Diaconis, P. (1981).  ...
 +
-'Posted 2015.05.17. Danila Deliya'
+_Posted 2015.05.17. Danila Deliya_
 
 == Selected Web Resources
 
-* p. 267, Kx Systems Links, The description of [20] Kdb+ IPC protocol
+* p. 267, _Kx Systems Links_, The description of [20] Kdb+ IPC protocol
   should end: Sample deserialization implementations can be found in
   the *Kx Connectivity Resources repository http://kx.com/q/c/*.
 +
-'Posted 2015.05.17. Danila Deliya'
+_Posted 2015.05.17. Danila Deliya_
 
 == List of Terms
-* p. 271, Projection, The last sentence should read: Monadic functions
-can not *be* projected, as the function will be instantly called.
+* p. 271, _Projection_, The last sentence should read: Monadic
+  functions can not *be* projected, as the function will be instantly
+  called.
 +
-'Posted 2015.05.17. Danila Deliya'
+_Posted 2015.05.17. Danila Deliya_
 
 == Appendix A
 
-* p. 274, Utilities, The implementation of +.util.pivot+ should read:
+* p. 274, _Utilities_, The implementation of +.util.pivot+ should read:
 +
 ----
 pivot:{[t]
@@ -262,5 +280,5 @@ pivot:{[t]
  p}
 ----
 +
-'Posted 2015.03.26. Nick Psaris'
+_Posted 2015.03.26. Nick Psaris_
 
