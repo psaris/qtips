@@ -35,7 +35,7 @@ _Posted 2015.05.03. Danila Deliya_
   the +.stat.bm+ function uses the "*#*" operator ...
 +
 _Posted 2015.03.27. Julien Quentin Tran_
-* p. 44, *4.2 Box Muller*,_Reshape_, the second sentence should read:
+* p. 44, *4.2 Box Muller*, _Reshape_, the second sentence should read:
    The basic form of the take operator "*#*" takes ...
 +
 _Posted 2015.03.27. Julien Quentin Tran_
