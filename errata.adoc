@@ -39,6 +39,10 @@ _Posted 2015.03.27. Julien Quentin Tran_
    The basic form of the take operator "*#*" takes ...
 +
 _Posted 2015.03.27. Julien Quentin Tran_
+* p. 44, *4.2 Box Muller*, _Reshape_, the footnote should read: +k+
+   does *not* require semicolons ...
++
+_Posted 2015.11.17. Gerard A. Verdone_
 * p. 46, *4.2 Box Muller*, _Loading Code_, the last sentence should
  conclude: we now move to a slower generator of normal random
  variables that only requires a single *uniform* variable as input.
@@ -65,6 +69,10 @@ _Posted 2015.08.01. https://twitter.com/SrBufi_
   "=" have the *same* behavior.
 +
 _Posted 2015.03.27. Julien Quentin Tran_
+* p. 57, *5.3 Directories*, The first sentence should read: The root
+  namespace and all its children *are* designed for data.
++
+_Posted 2015.11.17.  Gerard A. Verdone_
 
 == Chapter 6 _A Random Walk_
 
