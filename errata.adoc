@@ -1,5 +1,6 @@
 = Q Tips Errata
 :toc:
+:toc-placement: preamble
 
 Despite my best efforts to create the book with zero errors, readers
 have pointed out a few bugs. The Kindle version has all corrections
