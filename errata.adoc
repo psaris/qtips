@@ -44,6 +44,10 @@ _Posted 2015.03.27. Julien Quentin Tran_
    does *not* require semicolons ...
 +
 _Posted 2015.11.17. Gerard A. Verdone_
+* p. 45, *4.2 Box Muller*, _Reshape_, the first sentence should start:
+  For the special case where one of the dimensions *is* null, ...
++
+_Posted 2016.01.10. David Z. Han_
 * p. 46, *4.2 Box Muller*, _Loading Code_, the last sentence should
  conclude: we now move to a slower generator of normal random
  variables that only requires a single *uniform* variable as input.
