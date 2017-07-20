@@ -15,6 +15,14 @@ toc::[]
 == Preface
 
 == Chapter 1 _Introduction_
+* p. 2, *1.1 Why Kdb+?*, the third sentence of the fourth paragraph
+ should read: When the results of a vector operation are then used as
+ the inputs of the next operation, all the data stored in the CPU's
+ memory cache can be *accessed* immediately without needing to search in
+ the slower/larger caches or even the slowest and largest memory store
+ located on the motherboard.
++
+_Posted 2017.07.18. David Z. Han_
 
 == Chapter 2 _Getting Started_
 
