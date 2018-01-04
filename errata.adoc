@@ -31,6 +31,10 @@ _Posted 2017.07.18. David Z. Han_
  on my machine.
 +
 _Posted 2015.05.03. Danila Deliya_
+* p. 12, *2.2 Basics*, _File Handles_, the fifth sentence should
+ begin: In the case *of* file handles ...
++
+_Posted 2018.01.03. Mihail Temelkov_
 * p. 17, *2.3 Syntax Rules*, _Parentheses_, the first sentence should
  read: Parentheses can also be used *to* enforce operator precedence.
 +
