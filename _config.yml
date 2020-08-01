@@ -1,0 +1,8 @@
+title: Q Tips
+description: "Source files for \"Q Tips: Fast, Scalable and Maintainable Kdb+\""
+google_analytics:
+show_downloads: false
+theme: jekyll-theme-hacker
+
+gems:
+  - jekyll-mentions
