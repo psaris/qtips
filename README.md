@@ -1,6 +1,6 @@
 # Q Tips
 
-This project contains the source files for "Q Tips: Fast, Scalable and Maintainable Kdb+".
+This project contains the source files for "Q Tips: Fast, Scalable and Maintainable Kdb+".[^fn1]
 
 ## The Book
 
@@ -35,3 +35,7 @@ $ q cep.q -p 5001 -w 200 -t 100 -eod 16:00 -db qdb
 ## The Errors
 
 Any typos and errors are listed [here](errata.adoc).  The Kindle version has been updated to include all corrections.
+
+<!----- Footnotes ----->
+
+[^fn1]: More presentations, competitions and books by Nick Psaris can be found at <https://nick.psaris.com>
