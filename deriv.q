@@ -34,16 +34,16 @@ bo:{[bf;pf;f]bf[f]*pf f}
 / (S)pot, stri(k)e, (r)ate, (t)ime,
 / (c)all flag, (s)igma
 bsm:{[S;k;r;t;c;s]
- x:(log[S%k]+rt:r*t)%ssrt:s*sqrt t;
+ x:(log[S%k]+rt:r*t)%ssrt:s*srt:sqrt t;
  d1:ssrt+d2:x-.5*ssrt;
  n1:m*.stat.cnorm d1*m:-1 1f c;
- n2:exp[neg rt]*m*.stat.cnorm d2*m;
- p:(sn:S*n1)-kn:k*n2;
- g:n1%s*ssrt;
- v:sn*ssrt;
- th:neg (r*kn)+.5*v*s%t;
- rho:t*kn;
+ n2:m*.stat.cnorm d2*m;
+ p:(S*n1)-n2*pvk:k*pv:exp neg rt;
+ g:(n1p:exp[-.5*d1*d1]%sqrt 2f*acos -1f)%S*ssrt;
+ v:srt*Sn1p:S*n1p;
+ th:neg (r*pvk*n2)+Sn1p*s*.5%srt;
+ rho:pvk*t*n2;
  d:`price`delta`gamma`vega`theta`rho;
- d!:(p;n1;g;sn*ssrt;th;rho);
+ d!:(p;n1;g;v;th;rho);
  if[0h<type p;d:flip d];
  d}
