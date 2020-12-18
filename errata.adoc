@@ -72,6 +72,7 @@ _Posted 2015.05.03. Danila Deliya_
 * p. 49, *4.3 Beasley-Springer-Moro*, _Over_, the second listing
   should multiply by .1:
 +
+[source, q]
 ----
 q)0 (.9)\.1*til 5
 0 0.1 0.29 0.561 0.9049
@@ -107,6 +108,7 @@ _Posted 2015.05.13. Danila Deliya_
 * p. 119, *9.3 Trades*, _Grouping_, The second listing should not have
   the extra:
 +
+[source, q]
 ----
 q)o
 ----
@@ -181,6 +183,7 @@ _Posted 2015.05.13. Danila Deliya_
 * p. 184, *14.2 Pivot Tables*, _Writing a Pivot Function_, The
   implementation of +.util.pivot+ should read:
 +
+[source, q]
 ----
 pivot:{[t]
  u:`$string asc distinct last f:flip key t;
@@ -207,6 +210,7 @@ _Posted 2015.05.13. Danila Deliya_
 * p. 209, *15.1 Partitioning By Column*, _The +sym+ File_, The second
   listing should begin with the following command:
 +
+[source, q]
 ----
 q)prices`id
 ----
@@ -319,6 +323,7 @@ _Posted 2015.05.17. Danila Deliya_
 
 * p. 274, _Utilities_, The implementation of +.util.pivot+ should read:
 +
+[source, q]
 ----
 pivot:{[t]
  u:`$string asc distinct last f:flip key t;
