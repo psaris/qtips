@@ -258,6 +258,28 @@ _Posted 2015.05.17. Danila Deliya_
   first sentence should read: The Up and Out option is worth *less*.
 +
 _Posted 2015.05.17. Danila Deliya_
+* p. 252, *17.2 Derivative Pricing*, _Black-Scholes-Merton_, The
+  implementation of the +.deriv.bsm.+ function should read:
++  
+[source, q]
+----
+bsm:{[S;k;r;t;c;s]
+ x:(log[S%k]+rt:r*t)%ssrt:s*srt:sqrt t;
+ d1:ssrt+d2:x-.5*ssrt;
+ n1:m*.stat.cnorm d1*m:-1 1f c;
+ n2:m*.stat.cnorm d2*m;
+ p:(S*n1)-n2*pvk:k*pv:exp neg rt;
+ g:(n1p:exp[-.5*d1*d1]%sqrt 2f*acos -1f)%S*ssrt;
+ v:srt*Sn1p:S*n1p;
+ th:neg (r*pvk*n2)+Sn1p*s*.5%srt;
+ rho:pvk*t*n2;
+ d:`price`delta`gamma`vega`theta`rho;
+ d!:(p;n1;g;v;th;rho);
+ if[0h<type p;d:flip d];
+ d}
+----
++
+_Posted 2015.05.17. Matthew Balkanloo_
 * p. 254, *17.2 Derivative Pricing*, _Brawn vs Brain_, The first
   sentence of the first paragraph should begin: For example, if we
   assign a projection of +.deriv.bsm+ to *+f+* ...
