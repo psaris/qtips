@@ -34,7 +34,9 @@ $ q cep.q -p 5001 -w 200 -t 100 -eod 16:00 -db qdb
 
 ## The Errors
 
-Any typos and errors are listed [here](errata.adoc).  The Kindle version has been updated to include all corrections.
+Any typos or errors are listed [here](errata.adoc) and are
+incorporated into recent printings of the book as well as the
+Kindle version.
 
 <!----- Footnotes ----->
 
