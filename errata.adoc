@@ -94,6 +94,12 @@ _Posted 2015.11.17.  Gerard A. Verdone_
 
 == Chapter 6 _A Random Walk_
 
+* p. 65, *6.1 Geometric Brownian Motion*, _Uniform Functions_, the
+  definition of +fills+ should read: Each *null* element is *replaced*
+  with the *last* prior *non-null* value.
++
+_Posted 2021.12.09.  Simon Shanks_
+
 == Chapter 7 _Building a Table_
 
 == Chapter 8 _Large Tables_
