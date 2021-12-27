@@ -6,3 +6,11 @@ theme: jekyll-theme-hacker
 
 plugins:
   - jekyll-mentions
+
+exclude:
+  - "*.q"
+  - Gemfile*
+  - CNAME
+  - LICENSE
+  - ref.csv
+  - errata.adoc
