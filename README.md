@@ -37,6 +37,12 @@ Any typos or errors are listed [here](errata.adoc) and are
 incorporated into recent printings of the book as well as the
 Kindle version.
 
+## The Swag
+
+Swag can be found on the [Vector Sigma Teespring
+site](https://teespring.com/stores/vectorsigma).
+
+
 <!----- Footnotes ----->
 
 [^fn1]: More presentations, competitions and books by Nick Psaris can be found at <https://nick.psaris.com>
