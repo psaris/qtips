@@ -264,6 +264,19 @@ _Posted 2015.05.17. Danila Deliya_
   directories to inspect.
 +
 _Posted 2015.05.17. Danila Deliya_
+* p. 245, *17.2 Derivative Pricing*, _Monte Carlo Simulation_, The
+  implementation of the +.deriv.mc+ function should read:
++  
+[source, q]
+----
+mc:{[S;s;r;t;pf;n]
+ z:.stat.bm n?/:count[t]#1f;
+ f:S*prds .stat.gbm[s;r;deltas[first t;t]] z;
+ v:pf[f]*exp neg r*last t;
+ v}
+----
++
+_Posted 2022.02.05. Nick Psaris_
 * p. 251, *17.2 Derivative Pricing*, _Path Dependent Payoffs_, The
   first sentence should read: The Up and Out option is worth *less*.
 +
