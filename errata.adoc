@@ -44,6 +44,11 @@ _Posted 2015.05.03. Danila Deliya -- Fixed in the 3rd printing_
 
 == Chapter 4 _Functions_
 
+* p. 40, *4.1 12 Uniforms*, _Cut_, the last sentence should read: We
+then see the +cut+ operator which converts the one dimensional
+list into a matrix with *12* rows and *+x+* elements per row.
++
+_Posted 2023.09.19. Jamal Mulla -- Fixed in the 6th printing_
 * p. 44, *4.2 Box Muller*, _Reshape_, should read: The second line of
   the +.stat.bm+ function uses the "*#*" operator ...
 +
@@ -99,6 +104,11 @@ _Posted 2015.11.17.  Gerard A. Verdone -- Fixed in the 4th printing_
   with the *last* prior *non-null* value.
 +
 _Posted 2021.12.09.  Simon Shanks -- Fixed in the 5th printing_
+* p. 71, *6.3 Path Generation*, _Dot Apply_, the second sentence in the
+  second-to-last paragraph should begin: It then calls the *right*
+  operand.
++
+_Posted 2023.09.19.  Jamal Mulla -- Fixed in the 6th printing_
 
 == Chapter 7 _Building a Table_
 
