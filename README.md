@@ -1,26 +1,37 @@
 # Q Tips
 
-This project contains the source files for "Q Tips: Fast, Scalable and Maintainable Kdb+".[^fn1]
+This project contains the source files for "Q Tips: Fast, Scalable and
+Maintainable Kdb+".[^fn1]
 
 ## The Book
 
-**Q Tips** can be purchased on
-[Amazon](http://www.amazon.com/Tips-Fast-Scalable-Maintainable-Kdb/dp/9881389909).
-A [Kindle
-version](http://www.amazon.com/Tips-Fast-Scalable-Maintainable-Kdb-ebook/dp/B00UZ8OMME)
-is also available.  Books may be purchased in quantity and/or special
-sales by contacting the publisher, [Vector
-Sigma](mailto:sales@vector-sigma.com).  Read a
-[review](https://vector.org.uk/book-review-q-tips-fast-scalable-and-maintainable-kdb-2/)
-by [Yang Guo](https://www.linkedin.com/in/yang-guo-19494ba/) published
-by [Vector](https://vector.org.uk/), the Journal of the British APL
+**Q Tips** can be purchased on [Amazon][BOOK].  A [Kindle
+version][KINDLE] is also available.  Books may be purchased in
+quantity and/or special sales by contacting the publisher, [Vector
+Sigma][VECSIG].  Read a [review][REVIEW] by [Yang Guo][YANGGUO]
+published by [Vector][VECTOR], the Journal of the British APL
 Association.
 
-Check out Kx System's [press release](https://kx.com/news/q-tips-offers-practical-guidance-for-financial-big-data-analytics/).
+
+[BOOK]: http://www.amazon.com/Tips-Fast-Scalable-Maintainable-Kdb/dp/9881389909 "Q Tips book"
+[KINDLE]: http://www.amazon.com/Tips-Fast-Scalable-Maintainable-Kdb-ebook/dp/B00UZ8OMME "Q Tips e-book"
+[VECSIG]: mailto:sales@vector-sigma.com "Vector Sigma e-mail"
+[REVIEW]: https://vector.org.uk/book-review-q-tips-fast-scalable-and-maintainable-kdb-2/ "Q Tips book review"
+[YANGGUO]: https://www.linkedin.com/in/yang-guo-19494ba/ "Yang Guo"
+[VECTOR]: https://vector.org.uk/ "Vector - Journal of the British APL Association"
+
+
+Check out Kx System's [press release][PRESS].
+
+[PRESS]: https://kx.com/news/q-tips-offers-practical-guidance-for-financial-big-data-analytics/ "Q Tips press release"
 
 ## The Source
 
-Install `q` from Kx System's kdb+ [download page](https://kx.com/developers/download-licenses/) and grab a copy of the **Q Tips** [source]({{site.github.repository_url}}).
+Install `q` from Kx System's kdb+ [download page][DOWNLOAD] and grab a
+copy of the **Q Tips** [source]({{site.github.repository_url}}).
+
+[DOWNLOAD]: https://kx.com/developers/download-licenses/ "Download Q"
+
 
 ```sh
 $ git clone https://github.com/psaris/qtips
@@ -45,10 +56,12 @@ Kindle version.
 
 ## The Swag
 
-Swag can be found on the [Vector Sigma Teespring
-site](https://teespring.com/stores/vectorsigma).
+Swag can be found on the [Vector Sigma Teespring site][TEESPRING].
+
+[TEESPRING]: https://teespring.com/stores/vectorsigma "Vector Sigma Teespring"
 
 
 <!----- Footnotes ----->
 
-[^fn1]: More presentations, competitions and books by Nick Psaris can be found at <https://nick.psaris.com>
+[^fn1]: More presentations, competitions and books by Nick Psaris can
+    be found at <https://nick.psaris.com>
