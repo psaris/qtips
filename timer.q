@@ -18,7 +18,7 @@ run:{[t;i;tm]
  j:t i;
  t:.[t;();_;i];
  r:value (f:j `func),ltime tm;
- if[not null r;merge[t;(j `name;f;tm+r)]];
+ if[not null r;t:merge[t;(j `name;f;tm+r)]];
  t}
 
 / scan timer (t)able for runable jobs
