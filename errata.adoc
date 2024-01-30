@@ -15,7 +15,7 @@ toc::[]
 == Preface
 
 == Chapter 1 _Introduction_
-* p. 2, *1.1 Why Kdb+?*, the third sentence of the fourth paragraph
+* p. 2, *1.1 Why Kdb+?*, The third sentence of the fourth paragraph
  should read: When the results of a vector operation are then used as
  the inputs of the next operation, all the data stored in the CPU's
  memory cache can be *accessed* immediately without needing to search in
@@ -26,16 +26,16 @@ _Posted 2017.07.18. David Z. Han -- Fixed in the 4th printing_
 
 == Chapter 2 _Getting Started_
 
-* p. 9, *2.1 Installing KDB+*, _Running q_, the fifth sentence should
+* p. 9, *2.1 Installing KDB+*, _Running q_, The fifth sentence should
  read: +*4*()core+ indicates that kdb+ is capable of seeing *4* cores
  on my machine.
 +
 _Posted 2015.05.03. Danila Deliya -- Fixed in the 3rd printing_
-* p. 12, *2.2 Basics*, _File Handles_, the fifth sentence should
+* p. 12, *2.2 Basics*, _File Handles_, The fifth sentence should
  begin: In the case *of* file handles ...
 +
 _Posted 2018.01.03. Mihail Temelkov -- Fixed in the 4th printing_
-* p. 17, *2.3 Syntax Rules*, _Parentheses_, the first sentence should
+* p. 17, *2.3 Syntax Rules*, _Parentheses_, The first sentence should
  read: Parentheses can also be used *to* enforce operator precedence.
 +
 _Posted 2015.05.03. Danila Deliya -- Fixed in the 3rd printing_
@@ -44,7 +44,7 @@ _Posted 2015.05.03. Danila Deliya -- Fixed in the 3rd printing_
 
 == Chapter 4 _Functions_
 
-* p. 40, *4.1 12 Uniforms*, _Cut_, the last sentence should read: We
+* p. 40, *4.1 12 Uniforms*, _Cut_, The last sentence should read: We
 then see the +cut+ operator which converts the one dimensional
 list into a matrix with *12* rows and *+x+* elements per row.
 +
@@ -53,28 +53,28 @@ _Posted 2023.09.19. Jamal Mulla -- Fixed in the 6th printing_
   the +.stat.bm+ function uses the "*#*" operator ...
 +
 _Posted 2015.03.27. Julien Quentin Tran -- Fixed in the 2nd printing_
-* p. 44, *4.2 Box Muller*, _Reshape_, the second sentence should read:
+* p. 44, *4.2 Box Muller*, _Reshape_, The second sentence should read:
    The basic form of the take operator "*#*" takes ...
 +
 _Posted 2015.03.27. Julien Quentin Tran -- Fixed in the 4th printing_
-* p. 44, *4.2 Box Muller*, _Reshape_, the footnote should read: +k+
+* p. 44, *4.2 Box Muller*, _Reshape_, The footnote should read: +k+
    does *not* require semicolons ...
 +
 _Posted 2015.11.17. Gerard A. Verdone -- Fixed in the 4th printing_
-* p. 45, *4.2 Box Muller*, _Reshape_, the first sentence should start:
+* p. 45, *4.2 Box Muller*, _Reshape_, The first sentence should start:
   For the special case where one of the dimensions *is* null, ...
 +
 _Posted 2016.01.10. David Z. Han_
-* p. 46, *4.2 Box Muller*, _Loading Code_, the last sentence should
+* p. 46, *4.2 Box Muller*, _Loading Code_, The last sentence should
  conclude: we now move to a slower generator of normal random
  variables that only requires a single *uniform* variable as input.
 +
 _Posted 2015.05.03. Danila Deliya -- Fixed in the 3rd printing_
-* p. 47, *4.3 Beasley-Springer-Moro*, _Horner's Method_, the first
+* p. 47, *4.3 Beasley-Springer-Moro*, _Horner's Method_, The first
   sentence should begin: The *fifth* line ...
 +
 _Posted 2015.05.03. Danila Deliya -- Fixed in the 3rd printing_
-* p. 49, *4.3 Beasley-Springer-Moro*, _Over_, the second listing
+* p. 49, *4.3 Beasley-Springer-Moro*, _Over_, The second listing
   should multiply by .1:
 +
 [source, q]
@@ -87,7 +87,7 @@ _Posted 2015.08.01. Anonymous -- Fixed in the 4th printing_
 
 == Chapter 5 _Code Organization_
 
-* p. 53, *5.1 Libraries*, _Identity vs Equality_, the second sentence
+* p. 53, *5.1 Libraries*, _Identity vs Equality_, The second sentence
   should read: For atoms, the match operator and the equality operator
   "=" have the *same* behavior.
 +
@@ -99,12 +99,12 @@ _Posted 2015.11.17.  Gerard A. Verdone -- Fixed in the 4th printing_
 
 == Chapter 6 _A Random Walk_
 
-* p. 65, *6.1 Geometric Brownian Motion*, _Uniform Functions_, the
+* p. 65, *6.1 Geometric Brownian Motion*, _Uniform Functions_, The
   definition of +fills+ should read: Each *null* element is *replaced*
   with the *last* prior *non-null* value.
 +
 _Posted 2021.12.09.  Simon Shanks -- Fixed in the 5th printing_
-* p. 71, *6.3 Path Generation*, _Dot Apply_, the second sentence in the
+* p. 71, *6.3 Path Generation*, _Dot Apply_, The second sentence in the
   second-to-last paragraph should begin: It then calls the *right*
   operand.
 +
@@ -116,7 +116,7 @@ _Posted 2023.09.19.  Jamal Mulla -- Fixed in the 6th printing_
 
 == Chapter 9 _Trades and Quotes_
 
-* p. 116, *9.3 Trades*, _Delaying a Time Series_, the second paragraph
+* p. 116, *9.3 Trades*, _Delaying a Time Series_, The second paragraph
   should begin: The +prev+ operator is similar *to* the +next+
   operator ...
 +
@@ -132,12 +132,12 @@ q)o
 _Posted 2015.03.27. Julien Quentin Tran -- Fixed in the 2nd printing_
 
 == Chapter 10 _CEP Engine Components_
-* p. 125, *10.1 Timer Events*, _Nulls and Infinities_, the third
+* p. 125, *10.1 Timer Events*, _Nulls and Infinities_, The third
   sentence of the last paragraph should end: perhaps the most
   appropriate trade price would be the last known trade *price*.
 +
 _Posted 2015.05.13. Danila Deliya -- Fixed in the 3rd printing_
-* p. 128, *10.1 Timer Events*, _While_, the implementation of the
+* p. 128, *10.1 Timer Events*, _While_, The implementation of the
   +.timer.run+ function should read:
 +
 [source, q]
@@ -151,12 +151,12 @@ run:{[t;i;tm]
 ----
 +
 _Posted 2023.11.17. Paul Delaney -- Unpublished_
-* p. 129, *10.1 Timer Events*, _Drop_, the first sentence on the page
+* p. 129, *10.1 Timer Events*, _Drop_, The first sentence on the page
   should be: The second line of the function indexes into the table to
   find the job *+j+*.
 +
 _Posted 2015.05.13. Danila Deliya -- Fixed in the 3rd printing_
-* p. 129, *10.1 Timer Events*, _Drop_, the fourth paragraph should
+* p. 129, *10.1 Timer Events*, _Drop_, The fourth paragraph should
   also refer to the *+j+* dictionary.
 +
 _Posted 2015.05.13. Danila Deliya -- Fixed in the 3rd printing_
