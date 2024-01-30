@@ -137,6 +137,20 @@ _Posted 2015.03.27. Julien Quentin Tran -- Fixed in the 2nd printing_
   appropriate trade price would be the last known trade *price*.
 +
 _Posted 2015.05.13. Danila Deliya -- Fixed in the 3rd printing_
+* p. 128, *10.1 Timer Events*, _While_, the implementation of the
+  +.timer.run+ function should read:
++
+[source, q]
+----
+run:{[t;i;tm]
+ j:t i;
+ t:.[t;();_;i];
+ r:value (f:j `func),ltime tm;
+ if[not null r;t:merge[t;(j `name;f;tm+r)]];
+ t}
+----
++
+_Posted 2023.11.17. Paul Delaney -- Unpublished_
 * p. 129, *10.1 Timer Events*, _Drop_, the first sentence on the page
   should be: The second line of the function indexes into the table to
   find the job *+j+*.
