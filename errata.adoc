@@ -332,7 +332,7 @@ _Posted 2020.12.17. Matthew Balkanloo -- Fixed in the 5th printing_
   assign a projection of +.deriv.bsm+ to *+f+* ...
 +
 _Posted 2015.05.17. Danila Deliya -- Fixed in the 3rd printing_
-* p. 258, *17.3 Histograms*, _Grouping Data_, The first sentence of
+* p. 258, *17.3 Histograms*, _Grouping Data_, The second sentence of
   the fourth paragraph should begin: The operator assumes, but does
   not enforce, *that* our list of bins ...
 +
