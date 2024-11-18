@@ -228,6 +228,19 @@ _Posted 2015.03.26. Nick Psaris -- Fixed in the 2nd printing_
   operator ...
 +
 _Posted 2015.05.13. Danila Deliya -- Fixed in the 3rd printing_
+* p. 195, *14.4 Joining Datasets*, _Asof Joins_, The ending of the
+  third paragraph, fourth and fifth paragraph should read: But the
+  values in *the temporal column* will differ between the left and
+  right operands. There are two ways to obtain the time values from
+  the *right* operand.  The first is to use the ((+aj0+)) operator,
+  which has the same syntax as the ((+aj+)) operator but returns the
+  time from the right operand. The second way to obtain the same
+  information is to add a copy of the time column to *the right*
+  operand before performing the join. This second method has the
+  advantage of removing any doubt *as* to what the time in the table
+  refers to.
++
+_Posted 2024.11.17. Alexander Unterrainer -- Fixed in the 6th printing_
 * p. 198, *14.4 Joining Datasets*, _Asof joins_, The first sentence
   should read: Looking forward in time is generally a bad practice
   when attempting *to* reproduce a realistic simulation of historical
