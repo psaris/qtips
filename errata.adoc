@@ -150,7 +150,7 @@ run:{[t;i;tm]
  t}
 ----
 +
-_Posted 2023.11.17. Paul Delaney -- Unpublished_
+_Posted 2023.11.17. Paul Delaney -- Fixed in the 6th printing_
 * p. 129, *10.1 Timer Events*, _Drop_, The first sentence on the page
   should be: The second line of the function indexes into the table to
   find the job *+j+*.
@@ -313,7 +313,7 @@ mc:{[S;s;r;t;pf;n]
  v}
 ----
 +
-_Posted 2022.02.05. Nick Psaris -- Unpublished_
+_Posted 2022.02.05. Nick Psaris -- Fixed in the 6th printing_
 * p. 251, *17.2 Derivative Pricing*, _Path Dependent Payoffs_, The
   first sentence should read: The Up and Out option is worth *less*.
 +
